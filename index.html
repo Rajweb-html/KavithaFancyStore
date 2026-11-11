@@ -53,6 +53,48 @@
 
             .footer{display:flex;justify-content:center;flex-direction:row;flex-grow:1;
             background-color:rgb(4, 4, 80);color:white;padding:5px;letter-spacing:2px;}
+
+            /* Mobile Responsive Design */
+
+@media screen and (max-width: 600px) {
+
+    .products,
+    .benefits {
+        padding: 35px 15px;
+    }
+
+    .product-container,
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card,
+    .benefit-card {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
            
         </style>
     </head>
