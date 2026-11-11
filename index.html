@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kavitha Fancy Store</title>
+        <style>
+            body{margin:0;font-family:Arial, sans-serif;}
+
+            nav {background-color: rgb(4, 4, 80);color: white;padding: 20px;
+            display:flex;flex-direction:row;justify-content:space-between;align-items:center;
+            position:sticky;top:0;}
+
+            .logo {font-size: 40px;font-weight:600;font-family:"Brush Script MT";}
+            .span:first-child{color:#FF2F92;}
+
+            .nav-links a {color: white;text-decoration:none;margin-right: 20px;font-family:Georgia;
+                transition:0.5s ease;
+            }
+
+            .nav-links a:hover{color:rgb(223, 26, 157);}
+            .nav-links a.active{color:rgb(223, 26, 157);}
+
+            .hero{background-color:#fce4f7;padding:80px 40px;text-align:center;}
+            .hero h1{font-size:40px;font-weight:700;color: rgb(4, 4, 80);margin-bottom:15px;}
+            .hero p{font-size:20px;color: #555555;line-height:1.6;margin-bottom:30px;}
+            .hero span{font-size:50px;color:deeppink;font-family:"Brush Script MT";font-weight:500;line-height:1;}
+            .hero-button{display:inline-block;color:white;background-color: rgb(4, 4, 80);font-weight:700;text-decoration:none;padding:14px 30px;border-radius:6px;font-family:Georgia;}
+            .hero-button:hover{background-color:deeppink;}
+
+            
+            .products h2{Color:deeppink;text-align:center;font-family:"Brush Script MT";font-weight:bold;font-size:40px;margin-top:5px;}
+            .products p:nth-child(2){color:black;text-align:center;font-family:"Brush Script MT";font-weight:bold;font-size:25px;letter-spacing:2px;margin-top:-30px;}
+            .product-container{display:flex;flex-direction:row;gap:30px;justify-content:center;}
+            .product-card{background-color:white;width:300px;height:400px;padding:10px;
+                            border:2px solid navy;border-radius:10px;text-align:start;
+                            transition:transform 0.3s;box-shadow:0.3s ease;border:0.3s ease;
+            }
+            .product-card img{width:100%;height:250px;object-fit:cover;border-radius:8px;}
+            .product-card h3{font-family:"Times New Roman";font-size:20px;font-weight:700;margin-top:10px;}
+            .product-card p{color:rgb(247, 5, 134);font-size:20px;font-weight:700;margin-top:-20px;font-family:Cambria;}
+            .product-card:hover{transform:translateY(-8px);box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);border-color:#FF2F92;}
+            .product-card p:nth-child(4){color:white;background-color:deeppink;border:1px solid deeppink;display:flex;justify-content:center;
+            border-radius:5px;padding:10px;margin-top:25px;text-decoration:none;}
+
+            .benefits{background-color:#fce4f7;padding:5px 10px;margin-top:20px;}
+            .benefits-container{display:flex;flex-direction:row;justify-content:space-evenly;align-items:stretch;flex-wrap:wrap;}
+            .benefits-card{width:250px;padding:25px;text-align:center;border: 1px solid #eeeeee;transition: transform 0.3s ease, box-shadow 0.3s ease;}
+            .benefits-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(248, 3, 3, 0.15);}
+            .benefits-card h3{font-size:20px;color:#102746;margin-bottom:12px;}
+            .benefits-card p{font-size:16px;color:#666666;line-height:1.6;}
+            .benfits-card img{width:66px;height:66px;object-fit:contain;}
+
+            .footer{display:flex;justify-content:center;flex-direction:row;
+            background-color:rgb(4, 4, 80);color:white;padding:5px;letter-spacing:2px;}
+           
+        </style>
+    </head>
+    <body>
+        <nav>
+       <div class="logo"><span><img src="e:\Rk Folder\MyFirstWebsite\CSS\Logo-Jewel.png" width="40px" height="40px"></span> Kavitha Fancy Store
+       </div>
+       <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+       </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <span>New Collection</span>
+                <h1>Traditional Elegance</h1>
+                <p>Beautiful outfits for every special moment</p>
+                <a href="#" class="hero-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Our Best Sellers</h2>
+            <p>Handpicked favourites just for you</p>
+
+            <div class="product-container">
+
+            <div class="product-card">
+                <img src="e:\Rk Folder\MyFirstWebsite\CSS\Bangles.jpeg" alt="Beautiful Bangles">
+            <h3>Beautiful Bangles</h3>
+            <p>Rs.199 <br><s>Rs.299</s></p>
+            <p>Add to Cart</p>
+            </div>
+
+            <div class="product-card">
+                <img src="e:\Rk Folder\MyFirstWebsite\CSS\Necklace.jpeg" alt="Necklace">
+            <h3>Elegant Necklace set</h3>
+            <p>Rs.499 <br><s>Rs.599</s></p>
+            <p>Add to Cart</p>
+            </div>
+
+             <div class="product-card">
+                <img src="e:\Rk Folder\MyFirstWebsite\CSS\Hairclip.jpeg" alt="Hairclips">
+            <h3>Korean Hairclips</h3>
+            <p>Rs.299 <br><s>Rs.399</s></p>
+            <p>Add to Cart</p>
+            </div>
+
+            <div class="product-card">
+                <img src="e:\Rk Folder\MyFirstWebsite\CSS\earrings.jpeg" alt="Earrings">
+            <h3>Stylish Earrings</h3>
+            <p>Rs.599 <br><s>Rs.699</s></p>
+            <p>Add to Cart</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits-container">
+                <div class="benefits-card">
+            <img src="e:\Rk Folder\MyFirstWebsite\CSS\Logo-Shipping.png">
+            <h3>Free Shipping</h3>
+            <p>On Orders over Rs.99</p>
+            </div>
+
+            <div class="benefits-card">
+            <img src="e:\Rk Folder\MyFirstWebsite\CSS\Logo-Secure.png">
+            <h3>Secure Payment</h3>
+            <p>100% safe & secure</p>
+            </div>
+
+            <div class="benefits-card">
+            <img src="e:\Rk Folder\MyFirstWebsite\CSS\Logo-Support.png">
+            <h3>24/7 Support</h3>
+            <p>We are here for you</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>&copy; 2024 Kavitha Fancy Store. All rights reserved.</p>
+        </section>
+     </body>
+</html>
